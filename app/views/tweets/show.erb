@@ -1,0 +1,8 @@
+<h2>
+  <%= @tweet.content %>
+</h2>
+<h3>
+  posted by <%= @tweet.user.username %> 
+  on <%= @tweet.created_at.strftime("%-m/%-d %H:%M").downcase %>.
+</h3>
+<h4><a href="/tweets/<%= @tweet.id %>/edit" >edit</a></h4>
